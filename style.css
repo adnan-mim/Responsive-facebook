@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f2f5;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======== CONTENT ======== */
+
+.section .content{
+    position: relative;
+    top: 130px;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ======== FACEBOOK LOGO AND TEXT ======== */
+
+.content .text img{
+    margin: -35px;
+}
+
+.content .text p{
+    font-family: Source Sans pro;
+    font-size:2.5vw; 
+}
+
+/* ======== ACTUAL LOGIN FORM ======== */
+
+.content .form {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+}
+
+/* ======== INPUT FIELDS ======== */
+
+input{
+
+	border: 2px solid rgb(200, 200, 200) ;
+    border-radius: 6px;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 97%;
+}
+
+input:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+/* ======== LOGIN BUTTON ========  */
+
+.content .form .button{
+    text-decoration: none;
+    color: #fff;
+    font-family: bold;
+    margin-top: 4px ;
+    padding: 10px 143px;
+    border-radius: 6px;
+    background-color: #1877f2;
+}
+
+.content .form .button:hover{
+    background-color: #3076d3;
+    transition: .5s;
+}
+
+.content .form .button{
+    font-family: Source Sans pro;
+    font-weight: 900;
+}
+
+/* ======== FORGOTTEN PASSWORD ======== */
+
+.content .form .f-pass{
+    font-family: Source Sans pro;
+    font-size: 14px;
+    padding: 0;
+    margin: 10px;
+    background-color: transparent;
+    color: #1877f2;
+}
+
+.content .form .f-pass:hover{
+    text-decoration: underline;
+}
+
+/* ======== BOTTOM LINE ======== */
+
+.content .form .line{
+    width: 80%;
+    height: 2px;
+    background-color: #f0f2f5;
+}
+
+/* ======== CREATE NEW ACCOUNT ======== */
+
+.content .form button{
+    font-family: Source Sans pro;
+    font-weight: 900;
+    font-size: 19px;
+    background-color: #36a420;
+    margin: 19px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+}
+
+.content .form button:hover{
+    background-color: #2a9215;
+    transition: .5s;
+}
+
+/* ======== NEW P-TEXT ======== */
+
+.new-p{
+    font-family: Source Sans pro;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.new-p a{
+    text-decoration: none;
+}
+
+span{
+    color: #121212;
+    font-weight: bold;
+}
+
+span:hover{
+    text-decoration: underline;
+}
+
+
+/* ======== MOBILE-RESPONSIVE ======== */
+
+@media screen and (max-width: 767px) {
+    .content{
+        flex-direction: column;
+        height: 4px;
+        width: 300px;
+    }
+
+    .content img{
+        width: 250px;
+        position: relative;
+        left: 70px;
+    }
+
+    .content .text p{
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 20px; 
+    }
+}
+
+/* IG: GULRAIZ.GURU */
